@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisma test</title>
+  </head>
+  <body>
+    <h1 id="title">Test Filtre formulaire Prisma</h1>
+    <form id="filterForm">
+      <div id="block">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div id="block">
+        <label for="color">Choisir une couleur :</label>
+        <select id="color" name="color">
+          <option value=""></option>
+          <option value="blue">Bleu</option>
+          <option value="brown">Marron</option>
+          <option value="green">Vert</option>
+        </select>
+      </div>
+      <div id="block">
+        <label for="age">Tranche d'age:</label>
+        <select id="age" name="age">
+          <option value=""></option>
+          <option value="20-25">20-25</option>
+          <option value="26-30">26-30</option>
+          <option value="31-35">31-35</option>
+          <option value="36-40">36-40</option>
+        </select>
+      </div>
+      <div id="block">
+        <button type="submit">Filtrer</button>
+        <button id="clear_form">Nettoyer Formulaire</button>
+      </div>
+    </form>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prénom</th>
+          <th>Âge</th>
+          <th>Couleur des yeux</th>
+          <th>email</th>
+          <th>Company</th>
+          <th>Montant</th>
+        </tr>
+      </thead>
+      <tbody id="table_body"></tbody>
+    </table>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
